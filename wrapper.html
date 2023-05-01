@@ -1,0 +1,23 @@
+<div class="wrapperData shadow-sm p-3 fixed-top">
+	<button class="btn btn-primary me-3" id="loadFile">Load Data</button>
+	<button id="viewDataBtn" class="btn btn-secondary me-3" data-bs-toggle="collapse" data-bs-target="#collapseTbl" aria-expanded="false" aria-controls="collapseTbl">Toggle Table</button>
+	<button id="fillBtn" class="btn btn-danger">Fill</button><br />
+	<div class="collapse mt-3" id="collapseTbl">
+		<div class="card card-body">
+			<div class="tblWrapper"></div>
+		</div>
+	</div>
+</div>
+<style>
+	.wrapperData{
+		background-color: #cccccc4d;
+		backdrop-filter: blur(1px);
+		max-height: 100vh;
+	}
+	.wrapperData .input-group{
+		max-width: 500px;
+	}
+	.tabulator-table .tabulator-row.active-row{
+		background-color: #bee7ff;
+	}
+</style>
